@@ -1,5 +1,5 @@
 /* 
-functionName(param1, aram2, param3){
+functionName(param1, param2, param3){
     some code
 }
 */
