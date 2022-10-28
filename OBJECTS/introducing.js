@@ -20,3 +20,6 @@ var y = person['age'];
 
 var course = {name: "JS", lessons: 41};
 console.log(course.name.length);
+
+
+// OBJECT METHODS objectName.methodName
