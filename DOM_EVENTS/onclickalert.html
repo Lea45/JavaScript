@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--button-->
+    <button onclick="show()">Clik Me</button>
+
+     <!--input text-->
+     <input type="text" id="name" onchange="change()">
+
+    <!--button - samo za jedno korištenje-->
+    <button id="demo">Start</button>
+
+</body>
+</html>
+
+<script>
+    // button
+    function show() {
+        alert("HELLO");
+    }
+
+    // input text
+    function change() {
+        var x = document.getElementById("name");
+        x.value = x.value.toUpperCase();
+    }
+
+    // button - samo za jedno korištenje
+    var btn = document.getElementById("demo");
+    btn.addEventListener("click", myFunction);
+
+    function myFunction() {
+        alert(Math.random());
+        btn.removeEventListener("click", myFunction);
+    }
+  
+</script>
